@@ -25,9 +25,9 @@
     color: $White;
   }
 
-  .Task-Container.completed input.task {
-    filter: blur(4px);
-  }
+  // .Task-Container.completed input.task {
+  //   filter: blur(4px);
+  // }
 
   .dueDateSelected {
     color: $White;
@@ -55,4 +55,8 @@
 
 svg {
   color: $LightPurple;
+}
+
+.Task-Container.completed input.task {
+  filter: blur(4px);
 }
