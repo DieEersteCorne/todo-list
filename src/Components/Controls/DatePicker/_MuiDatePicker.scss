@@ -1,0 +1,60 @@
+.datepicker {
+  /* Change size of the datepicker */
+  max-width: 150px;
+}
+
+/* Change text size and color of the datepicker label */
+.datepicker .MuiInputLabel-root {
+  font-size: 14px;
+  color: #fff;
+}
+
+/* Change border color of the datepicker */
+// .datepicker .MuiOutlinedInput-root {
+//   border-color: #cc3939;
+// }
+
+/* Change color of the selected date */
+.datepicker .MuiPickersDay-daySelected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Change color of the current date */
+.datepicker .MuiPickersDay-dayToday {
+  color: #007bff;
+}
+
+.datepicker .MuiInputBase-root {
+  color: white;
+}
+
+.datepicker .MuiOutlinedInput-notchedOutline {
+  border-color: #fff;
+}
+.datepicker .MuiOutlinedInput-notchedOutline:hover {
+  border-color: gold;
+}
+
+.datepicker .MuiSvgIcon-root {
+  color: white;
+}
+
+.datepicker .MuiPaper-root {
+  border: 1px solid black;
+  /* background-color: gray; */
+}
+
+/* .datepicker .MuiInputBase-input {
+  padding: 10px;
+} */
+
+/* reposistion label within form */
+/* .datepicker .MuiFormLabel-root {
+  transform: translate(14px, 10px) scale(1);
+} */
+
+/* reposition form */
+/* .datepicker .MuiFormControl-root {
+  transform: translate(10px, 20px) scale(1);
+} */

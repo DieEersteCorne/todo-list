@@ -1,0 +1,58 @@
+@import '../../../../Styles/Mixins';
+@import '../../../../Styles/Variables';
+
+* {
+  @include Margin0Padding0;
+}
+
+.Task-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px auto;
+  max-width: 60%;
+  background-color: $LightPurple;
+  border-radius: 5px;
+
+  .checkbox {
+    margin-right: 10px;
+  }
+
+  .task {
+    margin-right: 10px;
+    background-color: transparent;
+    border: none;
+    color: $White;
+  }
+
+  .Task-Container.completed input.task {
+    filter: blur(4px);
+  }
+
+  .dueDateSelected {
+    color: $White;
+  }
+
+  .button-container {
+    transform: translateY(15%);
+
+    .delete-button {
+      margin-bottom: 10px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50px;
+      align-self: center;
+      background-color: $DarkPurple;
+      margin-left: 5px;
+
+      &:hover {
+        background-color: $White;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+svg {
+  color: $LightPurple;
+}

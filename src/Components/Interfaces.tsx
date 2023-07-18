@@ -1,3 +1,6 @@
 export interface ITask {
-  taskName: string;
+  text: string;
+  completed: boolean;
+  id: number;
+  dueDate: Date | null;
 }

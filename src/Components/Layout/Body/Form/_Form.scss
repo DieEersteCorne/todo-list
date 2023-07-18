@@ -1,0 +1,93 @@
+@import '../../../../Styles/Mixins';
+@import '../../../../Styles/Variables';
+
+* {
+  @include Margin0Padding0;
+}
+
+.form-InputField {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .input {
+    width: 300px;
+    height: 40px;
+    border: 0.2px solid rgb(59, 59, 58);
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 20px;
+    background-color: $DarkPurple;
+    color: $White;
+  }
+
+  .add-button {
+    margin-top: 10px;
+    width: 60px;
+    border-radius: 50px;
+    margin-bottom: 50px;
+
+    cursor: pointer;
+    color: white;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+
+    // &::after {
+    //   content: '';
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   width: 0;
+    //   height: 100%;
+    //   background-color: $black;
+    //   transition: width 0.5s;
+    // }
+
+    // &:hover::after {
+    //   width: 100%;
+    // }
+
+    .buttonSpan {
+      position: absolute;
+      background: $grey;
+      height: 100%;
+      width: 0;
+      border-radius: 50px;
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+      transition: 0.5s;
+    }
+
+    &:hover .buttonSpan {
+      width: 100%;
+    }
+  }
+
+  .Controls-styled-spaceBetween {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .toggleCompletebuttton {
+      font-size: 10px;
+      padding: 3px;
+      background-color: transparent;
+      color: $grey;
+      border: 1px solid;
+      border-radius: 2px;
+
+      &:hover {
+        cursor: pointer;
+        background-color: $black;
+        color: $gold;
+      }
+    }
+  }
+}
+
+.todoTaskList {
+  text-align: center;
+}

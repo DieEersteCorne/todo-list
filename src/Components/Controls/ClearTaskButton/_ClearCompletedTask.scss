@@ -1,0 +1,16 @@
+@import '../../../Styles/Variables';
+
+.clear-button {
+  font-size: 10px;
+  padding: 3px;
+  background-color: transparent;
+  color: $grey;
+  border: 1px solid;
+  border-radius: 2px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $black;
+    color: $gold;
+  }
+}
