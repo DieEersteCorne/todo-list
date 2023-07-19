@@ -1,0 +1,25 @@
+.Calender-style {
+}
+
+.Input-style {
+  background-color: transparent;
+  margin-top: 20px;
+  height: 35px;
+  width: 100px;
+  border: 1px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: width 0.3s ease; /* Add transition for smooth resizing */
+  padding-left: 5px;
+  color: white;
+}
+
+.Icon {
+  position: absolute;
+  transform: translate(590%, 190%);
+  color: white;
+}
+
+.Input-style.resized {
+  width: 100px !important; /* Adjust the desired width for resizing */
+}

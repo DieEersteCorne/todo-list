@@ -1,7 +1,7 @@
 import React, { FC, useState, ChangeEvent } from 'react';
 import { ITask } from '../../../Interfaces';
 import TodoItems from '../TodoItems/TodoItems';
-// import './_Form.css';
+
 import './_Form.scss';
 import { LocalizationProvider } from '@mui/x-date-pickers';
 import MuiDatePicker from '../../../Controls/DatePicker/MuiDatePicker';
@@ -9,6 +9,7 @@ import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import ToDoCount from '../../ToDoCount/ToDoCount';
 import ClearCompletedTask from '../../../Controls/ClearTaskButton/ClearCompletedTasks';
 import { Button, Stack } from '@mui/material';
+import CustomDatePicker from '../../../../Components/Controls/DatePicker/CustomDatePicker';
 
 const Form: FC = () => {
   // :FC sets the component to Functional component
@@ -63,6 +64,7 @@ const Form: FC = () => {
     setTasks(tasks.filter((task) => !task.completed));
   };
 
+  //toggle completed tasks
   const toggleCompleted = (taskId: number) => {
     setTasks(
       tasks.map((task) =>
@@ -95,10 +97,14 @@ const Form: FC = () => {
               />
             </form>
             <div className='date-picker-container'>
-              <MuiDatePicker
+              <CustomDatePicker
                 selectedDate={selectedDate}
                 setSelectedDate={setSelectedDate}
               />
+              {/* <MuiDatePicker
+                selectedDate={selectedDate}
+                setSelectedDate={setSelectedDate}
+              /> */}
             </div>
           </Stack>
           <button className='add-button' onClick={addTask}>

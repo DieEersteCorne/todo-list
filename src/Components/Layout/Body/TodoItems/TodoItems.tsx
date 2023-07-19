@@ -41,6 +41,7 @@ const TodoItems: FC<Props> = ({
         Due Date:{' '}
         {task.dueDate ? task.dueDate.toLocaleDateString() : 'No due date'}
       </div>
+
       <div className='button-container'>
         <button className='delete-button' onClick={() => deleteTask(task.text)}>
           <FontAwesomeIcon icon={faTrash} />
