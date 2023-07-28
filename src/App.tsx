@@ -1,15 +1,17 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
 import './App.scss';
-import Form from './Components/Layout/Body/Form/Form';
-import Header from './Components/Layout/Header/Header';
+import { Route, Routes } from 'react-router-dom';
+import HomePage from './Components/Pages/Homepage/HomePage';
+import FeedbackPage from './Components/Pages/FeedbackPage/FeedbackPage';
+import ContactUsPage from './Components/Pages/ContactUsPage/ContactUsPage';
 
 function App() {
   return (
     <>
-      <Header />
-      <Form />
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/feedback' element={<FeedbackPage />} />
+        <Route path='/contact' element={<ContactUsPage />} />
+      </Routes>
     </>
   );
 }

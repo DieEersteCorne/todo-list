@@ -1,0 +1,27 @@
+@import '../../../Styles/Variables';
+
+main {
+  min-height: calc(100vh - 51px - 40px);
+  .feedbackPage {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .Feedback-Input {
+      width: 300px;
+      height: 300px;
+      border: 0.2px solid rgb(59, 59, 58);
+      border-radius: 30px;
+      padding: 10px;
+      margin-top: 20px;
+      background-color: $DarkPurple;
+      color: $White;
+    }
+    .submitButton {
+      background-color: transparent;
+      color: white;
+      border: 1px solid white;
+      border-radius: 3px;
+      width: 60px;
+    }
+  }
+}

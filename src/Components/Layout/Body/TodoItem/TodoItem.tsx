@@ -1,21 +1,24 @@
 import React, { FC } from 'react';
 import { ITask } from '../../../Interfaces';
 import './_TodoItem.scss';
-import { Button } from '@mui/material';
-import DeleteIcon from '@mui/icons-material/Delete';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
+import Buttons, { Types } from '../../../Controls/Buttons/Buttons';
 
 interface Props {
   task: ITask;
-  deleteTask(taskNameToDelete: string): void; // we can call a fucntion as a prop
+  tasks: ITask[];
   editTask(taskId: number, newText: string): void;
   toggleCompleted(taskId: number): void;
+  // setTasks: React.Dispatch<React.SetStateAction<ITask[]>>;
+  setTasks: (updatedTasks: ITask[]) => void;
 }
 
-const TodoItems: FC<Props> = ({
+const TodoItem: FC<Props> = ({
   task,
-  deleteTask,
+  tasks,
+  setTasks,
   editTask,
   toggleCompleted
 }) => {
@@ -43,20 +46,16 @@ const TodoItems: FC<Props> = ({
       </div>
 
       <div className='button-container'>
-        <button className='delete-button' onClick={() => deleteTask(task.text)}>
-          <FontAwesomeIcon icon={faTrash} />
-        </button>
-        {/* <Button
-          variant='contained'
-          startIcon={<DeleteIcon />}
-          onClick={() => deleteTask(task.text)}
-        >
-          {' '}
-          Delete{' '}
-        </Button> */}
+        <Buttons
+          type={Types.DeleteButton}
+          tasks={tasks}
+          task={task}
+          setTasks={setTasks}
+          icon={faTrash}
+        />
       </div>
     </div>
   );
 };
 
-export default TodoItems;
+export default TodoItem;

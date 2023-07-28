@@ -1,0 +1,13 @@
+main {
+  min-height: calc(100vh - 51px - 40px);
+  .ContactUsPage {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(219, 209, 209);
+    margin: 20px;
+  }
+  span {
+    margin-top: 10px;
+  }
+}
