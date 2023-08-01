@@ -6,9 +6,9 @@ const ButtonNavigation: FC = () => {
     useButtonNavigationFunctions();
   return (
     <div className='NavigationButtons'>
-      <button onClick={clickHomePage}>HomePage</button>
-      <button onClick={clickFeedbackPage}>FeedBack Page</button>
-      <button onClick={clickContactUsPage}>contact us page</button>
+      <button className='HomepageButton' onClick={clickHomePage}>HomePage</button>
+      <button className='FeedbackPageButton' onClick={clickFeedbackPage}>FeedBack Page</button>
+      <button className='ContactUsPageButton' onClick={clickContactUsPage}>contact us page</button>
     </div>
   );
 };
