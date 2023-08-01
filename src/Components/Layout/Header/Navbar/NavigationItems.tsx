@@ -2,7 +2,7 @@ const NavigationItems = [
   {
     title: 'Home',
     cName: 'Style-Links',
-    url: '/'
+    url: '/home'
   },
   {
     title: 'Feedback',

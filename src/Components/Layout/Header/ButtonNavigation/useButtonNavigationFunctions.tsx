@@ -8,7 +8,7 @@ export const useButtonNavigationFunctions = () => {
   };
 
   const clickHomePage = (): void => {
-    navigate('/');
+    navigate('/home');
   };
 
   const clickContactUsPage = (): void => {
