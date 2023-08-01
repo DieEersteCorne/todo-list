@@ -8,6 +8,7 @@ function App() {
   return (
     <>
       <Routes>
+        {/* <Route index element={<FeedbackPage/>} /> */}
         <Route path='/' element={<HomePage />} />
         <Route path='/feedback' element={<FeedbackPage />} />
         <Route path='/contact' element={<ContactUsPage />} />

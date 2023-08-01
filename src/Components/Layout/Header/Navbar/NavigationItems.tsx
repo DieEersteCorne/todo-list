@@ -1,18 +1,18 @@
 const NavigationItems = [
   {
     title: 'Home',
-    url: '/',
-    cName: 'Style-Links'
+    cName: 'Style-Links',
+    url: '/'
   },
   {
     title: 'Feedback',
-    url: '/feedback',
-    cName: 'Style-Links'
+    cName: 'Style-Links',
+    url: '/feedback'
   },
   {
     title: 'Contact Us',
-    url: '/contact',
-    cName: 'Style-Links'
+    cName: 'Style-Links',
+    url: '/contact'
   }
 ];
 
