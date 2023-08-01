@@ -1,36 +1,14 @@
 @import '../../../../Styles/Variables';
 
-.NavigationButtons {
+.NavigationButtons
+{
  width: 100%;
   height: auto;
  display: flex;
  justify-content: center;
   background: grey;
-  .HomepageButton{
-    background-color: transparent;
-    margin: 5px;
-    border: 1px solid white;
-    padding: 1px;
-    border-radius: 3px;
-    cursor: pointer;
-    transition:.3s ease-in-out;
-    &:hover{
-      
-      transform: scale(1.1) perspective(1px)
-    }
-  }
-  .FeedbackPageButton{
-    background-color: transparent;
-    margin: 5px;
-    border: 1px solid white;
-    padding: 1px;
-    border-radius: 3px;
-    cursor: pointer;
-    transition:.3s ease-in-out;
-    &:hover{
-      transform: scale(1.1) perspective(1px)
-    }
-  }
+  .HomepageButton,
+  .FeedbackPageButton,
   .ContactUsPageButton{
     background-color: transparent;
     margin: 5px;
@@ -44,4 +22,29 @@
       transform: scale(1.1) perspective(1px)
     }
   }
+  // .FeedbackPageButton{
+  //   background-color: transparent;
+  //   margin: 5px;
+  //   border: 1px solid white;
+  //   padding: 1px;
+  //   border-radius: 3px;
+  //   cursor: pointer;
+  //   transition:.3s ease-in-out;
+  //   &:hover{
+  //     transform: scale(1.1) perspective(1px)
+  //   }
+  // }
+  // .ContactUsPageButton{
+  //   background-color: transparent;
+  //   margin: 5px;
+  //   border: 1px solid white;
+  //   padding: 1px;
+  //   border-radius: 3px;
+  //   cursor: pointer;
+  //   transition:.3s ease-in-out;
+  //   &:hover{
+      
+  //     transform: scale(1.1) perspective(1px)
+  //   }
+  // }
 }
